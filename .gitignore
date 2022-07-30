@@ -81,6 +81,8 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 .cmake/
+build/
+.vscode/
 
 ### CMake Patch ###
 # External projects
