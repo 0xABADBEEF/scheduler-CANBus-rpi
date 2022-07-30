@@ -1,1 +1,1 @@
-# SchedulerCAN
+# scheduler-CANBus-rpi
