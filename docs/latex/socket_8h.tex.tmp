@@ -1,0 +1,43 @@
+\hypertarget{socket_8h}{}\doxysection{Файл socket.\+h}
+\label{socket_8h}\index{socket.h@{socket.h}}
+
+
+Custom asio socket for C\+A\+N-\/bus.  
+
+
+{\ttfamily \#include $<$boost/asio.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/noncopyable.\+hpp$>$}\newline
+{\ttfamily \#include $<$linux/can.\+h$>$}\newline
+Граф включаемых заголовочных файлов для socket.\+h\+:
+% FIG 0
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classcan_1_1socket}{can\+::socket}}
+\begin{DoxyCompactList}\small\item\em Main class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{socket_8h_ac000fac79cafe1a841c959b20bd47765}\label{socket_8h_ac000fac79cafe1a841c959b20bd47765}} 
+typedef boost\+::asio\+::generic\+::raw\+\_\+protocol {\bfseries can\+::raw\+\_\+protocol\+\_\+t}
+\item 
+\mbox{\Hypertarget{socket_8h_a390965f1f902b50a86604bed9efeef16}\label{socket_8h_a390965f1f902b50a86604bed9efeef16}} 
+typedef boost\+::asio\+::generic\+::basic\+\_\+endpoint$<$ raw\+\_\+protocol\+\_\+t $>$ {\bfseries can\+::raw\+\_\+endpoint\+\_\+t}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Custom asio socket for C\+A\+N-\/bus. 
+
+\begin{DoxyAuthor}{Автор}
+Roman Permyakov (\href{mailto:RA.Permyakov@npo-nauka.ru}{\texttt{ R\+A.\+Permyakov@npo-\/nauka.\+ru}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2022-\/08-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+Copyright (c) 2022 
+\end{DoxyCopyright}
