@@ -1,0 +1,57 @@
+\hypertarget{classcan_1_1socket}{}\doxysection{Класс can\+::socket}
+\label{classcan_1_1socket}\index{can::socket@{can::socket}}
+
+
+Main class.  
+
+
+
+
+{\ttfamily \#include $<$socket.\+h$>$}
+
+
+
+Граф наследования\+:can\+::socket\+:
+% FIG 0
+
+
+Граф связей класса can\+::socket\+:
+% FIG 1
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcan_1_1socket_a651c33480d136f99e0aa1198ce34e666}\label{classcan_1_1socket_a651c33480d136f99e0aa1198ce34e666}} 
+{\bfseries socket} (const std\+::string \&ifn, boost\+::asio\+::io\+\_\+context \&io\+\_\+context)
+\item 
+\mbox{\Hypertarget{classcan_1_1socket_abfb4c59dbe29700e0e4083768197c2c1}\label{classcan_1_1socket_abfb4c59dbe29700e0e4083768197c2c1}} 
+raw\+\_\+protocol\+\_\+t\+::socket \& {\bfseries get\+Native\+Socket} ()
+\item 
+\mbox{\Hypertarget{classcan_1_1socket_af59cbce5f80d919bf41d43ab9a04fe07}\label{classcan_1_1socket_af59cbce5f80d919bf41d43ab9a04fe07}} 
+raw\+\_\+endpoint\+\_\+t \& {\bfseries get\+Endpoint} ()
+\item 
+\mbox{\Hypertarget{classcan_1_1socket_a2bdda8ce8eb2189ca293b5b6123fdd71}\label{classcan_1_1socket_a2bdda8ce8eb2189ca293b5b6123fdd71}} 
+can\+\_\+frame \& {\bfseries get\+Rec\+Frame} ()
+\item 
+\mbox{\Hypertarget{classcan_1_1socket_a5e10124b8de2caa533676fdc18f57773}\label{classcan_1_1socket_a5e10124b8de2caa533676fdc18f57773}} 
+const std\+::string \& {\bfseries get\+Interface\+Name} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcan_1_1socket_a9a0b451be2a4c7dc3f7d1960d8b3451c}\label{classcan_1_1socket_a9a0b451be2a4c7dc3f7d1960d8b3451c}} 
+boost\+::asio\+::io\+\_\+context\+::strand {\bfseries read}
+\item 
+\mbox{\Hypertarget{classcan_1_1socket_a9ba699a7b20febbd7117c74d2bf10f3b}\label{classcan_1_1socket_a9ba699a7b20febbd7117c74d2bf10f3b}} 
+boost\+::asio\+::io\+\_\+context\+::strand {\bfseries write}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Main class. 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{socket_8h}{socket.\+h}}\item 
+socket.\+cpp\end{DoxyCompactItemize}
