@@ -1,7 +1,7 @@
 /**
  * @file session.h
  * @author Roman Permyakov (RA.Permyakov@npo-nauka.ru)
- * @brief Class session used to group can-bus sockets and dds-layer into a single working unit.
+ * @brief Class session is used to group can-bus sockets and dds-layer into a single working unit.
  * @version 0.1
  * @date 2022-08-23
  * 
@@ -49,7 +49,7 @@ private:
     /**
      * Callback from DataReaderListener (dds-layer).
      *
-     * @brief Method called when a new Data Message (can_frame_from_dds or modification or config) is received.
+     * @brief Method is called when a new Data Message (can_frame_from_dds or modification or config) was received.
      * @param reader DataReader pointer which is saved in session.readers;
      */
     void on_data_available(DataReader *reader) override;
@@ -74,7 +74,7 @@ private:
     /**
      * Deprecated.
      *
-     * @brief Print can_frame. Thread-safe, but very slow.
+     * @brief Prints can_frame. It's Thread-safe, but very slow.
      * @param ifn name of interface (can0, vcan4 etc.)
      * @param rec_frame can_frame with received data
      */
@@ -120,8 +120,8 @@ private:
 public:
     /**
      * @brief Constructor
-     * @param ifn0 name of interface for first socket
-     * @param ifn1 name of interface for second socket
+     * @param ifn0 name of interface for the first socket
+     * @param ifn1 name of interface for the second socket
      * @param io_context boost::asio::io_context
      */
     session(const std::string &ifn0, const std::string &ifn1, boost::asio::io_context &io_context);
@@ -134,7 +134,7 @@ public:
     /**
      * DDS-layer Initialization.
      *
-     * @brief Create participant, publisher, subscriber, writers/readers and topics.
+     * @brief Creates participant, publisher, subscriber, writers/readers and topics.
      * @return true if everything was created successfully
      */
     bool init();
